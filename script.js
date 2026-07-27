@@ -153,6 +153,33 @@ const PROJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "p7",
+    filter: "web",
+    cat: "Web Development",
+    title: "Personal Data Analyst Portfolio",
+    kpi: { num: "100%", lbl: "responsive, no frameworks" },
+    kpis: [
+      { num: "6", lbl: "projects showcased" },
+      { num: "0", lbl: "front-end frameworks used" },
+      { num: "GitHub Pages", lbl: "deployment" }
+    ],
+    desc: "The site you're looking at right now: a portfolio built from scratch to turn reports, slide decks and notebooks into something you can actually click through.",
+    overview: [
+      "Every project on this site, the reports, the slide decks, the notebooks, the Power BI files, used to live scattered across folders. This site pulls them into one place with an interactive viewer: click a project, and its report, slides, code and video open right there in a tabbed modal instead of downloading four separate files.",
+      "Built with plain HTML5, CSS3 and vanilla JavaScript, no framework, no build step, so it stays fast and easy to maintain. PowerPoint and Word files are converted to PDF for instant in-browser preview, and Jupyter notebooks are rendered to clean HTML rather than making a visitor open Jupyter just to read the code.",
+      "Deployed on GitHub Pages with a custom favicon and a consistent visual system carried through every section, from the hero straight down to the project modals."
+    ],
+    stack: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+    tabs: [
+      { key: "overview", label: "Overview" },
+      { key: "code", label: "Source", type: "links", links: [
+          { href: "https://github.com/Osamuyi14/portfolio", label: "View source on GitHub ↗" },
+          { href: "https://osamuyi14.github.io/portfolio/", label: "Open live site ↗" }
+        ]
+      }
+    ]
   }
 ];
 
@@ -164,6 +191,7 @@ const TICKER_ITEMS = [
   { txt: "STUDENT RECORDS MODELLED", val: "6,607", teal: true },
   { txt: "ARIMA FORECAST HORIZON", val: "10-step" },
   { txt: "TERM DEPOSIT ACCURACY", val: "88.8%", teal: true },
+  { txt: "PORTFOLIO SITE FRAMEWORKS USED", val: "0" },
 ];
 
 // ==========================================================================
@@ -245,6 +273,14 @@ function tabPanelHTML(tab) {
       <p class="note">Proprietary file format. Download it to open in the native application.</p>
       <div class="pbix-visual-list">
         ${tab.files.map(f => `<a class="btn btn-ghost" href="${f.href}" download>${f.label} ↓</a>`).join("")}
+      </div>
+    </div>`;
+  }
+  if (tab.type === "links") {
+    return `<div class="download-row">
+      <p class="note">This project is a website, not a file, so here's where to see it live and read the code.</p>
+      <div class="pbix-visual-list">
+        ${tab.links.map(l => `<a class="btn btn-ghost" href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join("")}
       </div>
     </div>`;
   }
