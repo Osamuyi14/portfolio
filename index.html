@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osamuyimen Osunde | Data Analyst</title>
+<meta name="description" content="Portfolio of Osamuyimen Samson Osunde, Data Analyst. Machine learning, statistical analysis and Power BI projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="nav-mark">Osamuyimen <span class="nav-mark-last">Osunde</span><span class="nav-mark-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a class="nav-cta" href="assets/cv/resume.pdf" target="_blank" rel="noopener">
+          <span>Résumé</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Data Analyst · Wexford, Ireland</p>
+          <h1 class="hero-headline">
+            <span class="hl-wrap">Data that tells a <span class="hl">story.</span></span>
+            <span class="grad-line">Insights that inspire action.</span>
+          </h1>
+          <p class="hero-sub">I'm Osamuyimen Osunde, an MSc Data Analytics student specialising in predictive analytics, statistical modelling, and business intelligence. With a foundation in front-end engineering, I transform complex data into clear insights and interactive dashboards that support smarter business decisions.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects →</a>
+            <a href="assets/cv/resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download résumé</a>
+          </div>
+        </div>
+
+        <div class="readout" aria-hidden="false">
+          <div class="readout-head">
+            <span>model_registry.log</span>
+            <span class="readout-dot"></span>
+          </div>
+          <div class="readout-row"><span class="k">Best regression R²</span><span class="v amber">84.49%</span></div>
+          <div class="readout-row"><span class="k">Best classifier accuracy</span><span class="v amber">97.6%</span></div>
+          <div class="readout-row"><span class="k">Term-deposit ROC-AUC</span><span class="v teal">0.776</span></div>
+          <div class="readout-row"><span class="k">Datasets modelled</span><span class="v">6,600+ rows</span></div>
+          <div class="readout-row"><span class="k">Stack</span><span class="v teal">Py · R · SQL · DAX</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" role="marquee" aria-label="Project metrics">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="facts">
+          <div class="facts-row"><span class="k">Location</span><span class="v">Wexford, Ireland</span></div>
+          <div class="facts-row"><span class="k">Studying</span><span class="v">MSc Data Analytics, DBS<br>(expected Apr 2027)</span></div>
+          <div class="facts-row"><span class="k">Prior degree</span><span class="v">BSc Physics,<br>University of Benin</span></div>
+          <div class="facts-row"><span class="k">Core tools</span><span class="v">Python · R · SQL<br>Power BI</span></div>
+          <div class="facts-row"><span class="k">Also brings</span><span class="v">React / front-end<br>engineering</span></div>
+          <div class="facts-row"><span class="k">Email</span><span class="v">osamuyimenosunde<br>@gmail.com</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" style="margin-bottom:14px;">About</p>
+          <p>My path into data analytics started on the front end, building interfaces, wiring up APIs, and watching how the data behind a product shapes the decisions a team makes. That's the lens I still bring to every project: a model or a dashboard is only as good as the decision it helps someone make.</p>
+          <p>Since starting my MSc at Dublin Business School, I've worked through the full analytics pipeline on real, messy datasets. That means cleaning and encoding the data, comparing classical and ensemble machine learning models, running Bayesian and time-series statistics, then packaging it all into a Power BI dashboard a non-technical stakeholder can open and understand in under a minute.</p>
+          <p>I pay close attention to the parts that are easy to skip: checking for data leakage, cross-validating instead of trusting a single lucky split, and being upfront in every report about where a model falls short. Data governance and GDPR awareness aren't an afterthought either. They sit right alongside the technical work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Toolkit</p>
+        <h2>What I work with</h2>
+        <p>The analytical depth to find the answer, and the build skills to actually ship it.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Data &amp; Modelling</h3>
+          <ul>
+            <li>Python (pandas, scikit-learn)</li>
+            <li>R (tidyverse, forecast)</li>
+            <li>SQL</li>
+            <li>Predictive &amp; regression modelling</li>
+            <li>Statistical &amp; Bayesian analysis</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>BI &amp; Reporting</h3>
+          <ul>
+            <li>Power BI &amp; DAX</li>
+            <li>Data modelling / warehousing</li>
+            <li>Dashboard design</li>
+            <li>Data cleaning &amp; transformation</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Practice &amp; Standards</h3>
+          <ul>
+            <li>GDPR awareness</li>
+            <li>Root cause analysis</li>
+            <li>Technical documentation</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Front-End Engineering</h3>
+          <ul>
+            <li>React.js, JavaScript (ES6+)</li>
+            <li>HTML5, CSS3, Bootstrap 5</li>
+            <li>REST APIs</li>
+            <li>WCAG accessibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <p class="tl-meta">Sep 2025 – Apr 2026</p>
+          <h3>Junior Front-End Developer</h3>
+          <p class="role-co">RescueTap · Remote</p>
+          <ul>
+            <li>Translated business and campaign requirements into technical front-end implementations within an agile workflow</li>
+            <li>Integrated interfaces with back-end services and REST APIs</li>
+            <li>Used Chrome DevTools and root cause analysis to resolve performance issues</li>
+            <li>Built responsive components with React, JavaScript, HTML5 and CSS3, ensuring WCAG and cross-browser compliance</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <p class="tl-meta">May 2024 – Mar 2025</p>
+          <h3>Web Developer Intern</h3>
+          <p class="role-co">Audu-Nepad · Wuse, FCT Abuja, Nigeria</p>
+          <ul>
+            <li>Contributed across the full project lifecycle, from requirements through deployment</li>
+            <li>Collaborated with designers and QA on iterative releases</li>
+            <li>Built device-agnostic, responsive interfaces with modern JS frameworks</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <p class="tl-meta">Sep 2023 – Feb 2024</p>
+          <h3>Front-End Developer</h3>
+          <p class="role-co">Aiki Technologies Limited · Lagos, Nigeria</p>
+          <ul>
+            <li>Delivered front-end implementations from technical specifications</li>
+            <li>Proposed and implemented performance enhancements informed by engagement data</li>
+            <li>Worked cross-functionally with product, design and back-end engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+        <p>Click into any project below to see the report, the slides, the code, and (where I recorded one) a walkthrough video.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="stats">Statistics</button>
+        <button class="filter-btn" data-filter="bi">Business Intelligence</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"><!-- injected by script.js --></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Let's talk about your data.</h2>
+          <p>Open to data analyst roles, freelance analysis and good collaborations. I usually reply within a day.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:osamuyimenosunde@gmail.com"><span class="k">Email</span><span>osamuyimenosunde@gmail.com</span></a>
+          <a class="contact-link" href="tel:+353872462360"><span class="k">Phone</span><span>+353 87 246 2360</span></a>
+          <a class="contact-link" href="https://github.com/Osamuyi14" target="_blank" rel="noopener"><span class="k">GitHub</span><span>github.com/Osamuyi14</span></a>
+          <a class="contact-link" href="assets/cv/resume.pdf" target="_blank" rel="noopener"><span class="k">Résumé</span><span>Download PDF ↓</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Designed and built by Osamuyimen Samson Osunde, Wexford, Ireland.</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <div>
+        <p class="pcard-cat" id="modalCat">Category</p>
+        <h3 id="modalTitle">Project title</h3>
+        <div class="modal-kpis" id="modalKpis"></div>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    </div>
+    <div class="tabbar" id="modalTabs"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
