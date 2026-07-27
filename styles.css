@@ -111,7 +111,7 @@ button{ font-family:inherit; }
 }
 .nav-mark-last{
   font-style:italic;
-  color:var(--coral);
+  color:var(--teal);
   font-weight:600;
 }
 .nav-mark-dot{
