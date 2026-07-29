@@ -184,14 +184,12 @@ const PROJECTS = [
 ];
 
 const TICKER_ITEMS = [
-  { txt: "SVR TEST R²", val: "84.49%" },
-  { txt: "RF HORSEPOWER ACCURACY", val: "97.6%" },
-  { txt: "TERM DEPOSIT ROC-AUC", val: "0.776", teal: true },
-  { txt: "RANDOM FOREST F1", val: "0.95" },
-  { txt: "STUDENT RECORDS MODELLED", val: "6,607", teal: true },
-  { txt: "ARIMA FORECAST HORIZON", val: "10-step" },
-  { txt: "TERM DEPOSIT ACCURACY", val: "88.8%", teal: true },
-  { txt: "PORTFOLIO SITE FRAMEWORKS USED", val: "0" },
+  { txt: "Open to", val: "Data Analyst opportunities" },
+  { txt: "Studying", val: "MSc Data Analytics, DBS", teal: true },
+  { txt: "Core stack", val: "Python · R · SQL · Power BI" },
+  { txt: "Grounded in", val: "GDPR & data governance", teal: true },
+  { txt: "Based in", val: "Wexford, Ireland" },
+  { txt: "Background in", val: "front-end engineering", teal: true },
 ];
 
 // ==========================================================================
