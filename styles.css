@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Osamuyimen Osunde — Data Analyst Portfolio
+   Osamuyimen Osunde, Data Analyst Portfolio
    Design tokens
    ========================================================================== */
 :root{
@@ -339,7 +339,40 @@ section{ padding:96px 0; }
 @media (max-width:560px){ .skills-grid{ grid-template-columns:1fr; } }
 
 /* ==========================================================================
-   Experience — timeline
+   Certificates
+   ========================================================================== */
+.cert-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:20px; }
+.cert-card{
+  display:flex; flex-direction:column;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l);
+  overflow:hidden; text-decoration:none; color:inherit;
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.cert-card:hover{
+  transform:translateY(-3px);
+  border-color:var(--amber-dim);
+  box-shadow:0 14px 30px rgba(0,0,0,0.35);
+}
+.cert-thumb{
+  aspect-ratio:16/10.6; overflow:hidden; background:var(--ink); border-bottom:1px solid var(--line-soft);
+}
+.cert-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.cert-info{ padding:20px; display:flex; flex-direction:column; gap:8px; flex:1; }
+.cert-issuer{
+  font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.09em;
+  color:var(--teal);
+}
+.cert-info h3{ font-size:18px; }
+.cert-desc{ font-size:13.5px; color:var(--text-muted); flex:1; }
+.cert-link{
+  font-family:var(--mono); font-size:12.5px; color:var(--amber); font-weight:700;
+  display:flex; align-items:center; gap:6px; margin-top:4px;
+}
+.cert-link svg{ transition:transform .15s ease; }
+.cert-card:hover .cert-link svg{ transform:translateX(3px); }
+
+/* ==========================================================================
+   Experience, timeline
    ========================================================================== */
 .timeline{ position:relative; padding-left:26px; }
 .timeline::before{
