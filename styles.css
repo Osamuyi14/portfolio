@@ -354,9 +354,10 @@ section{ padding:96px 0; }
   box-shadow:0 14px 30px rgba(0,0,0,0.35);
 }
 .cert-thumb{
-  aspect-ratio:16/10.6; overflow:hidden; background:var(--ink); border-bottom:1px solid var(--line-soft);
+  aspect-ratio:16/10.6; overflow:hidden; background:#e9e2d3; border-bottom:1px solid var(--line-soft);
+  display:flex; align-items:center; justify-content:center;
 }
-.cert-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.cert-thumb img{ width:100%; height:100%; object-fit:contain; display:block; }
 .cert-info{ padding:20px; display:flex; flex-direction:column; gap:8px; flex:1; }
 .cert-issuer{
   font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.09em;
