@@ -188,7 +188,6 @@ const TICKER_ITEMS = [
   { txt: "Studying", val: "MSc Data Analytics, DBS", teal: true },
   { txt: "Core stack", val: "Python · R · SQL · Power BI" },
   { txt: "Grounded in", val: "GDPR & data governance", teal: true },
-  { txt: "Based in", val: "Wexford, Ireland" },
   { txt: "Background in", val: "front-end engineering", teal: true },
 ];
 
