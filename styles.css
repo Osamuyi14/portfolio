@@ -87,7 +87,7 @@ body::before{
 
 img{ max-width:100%; display:block; }
 a{ color:inherit; }
-h1,h2,h3,h4{ font-family:var(--display); margin:0; letter-spacing:-0.015em; font-weight:700; }
+h1,h2,h3,h4{ font-family:var(--display); margin:0; letter-spacing:-0.015em; font-weight:700; color:var(--text); }
 p{ margin:0; }
 ul{ margin:0; padding:0; list-style:none; }
 button{ font-family:inherit; }
@@ -113,6 +113,35 @@ button{ font-family:inherit; }
   background:var(--teal);
   box-shadow:0 0 0 3px rgba(79,209,197,0.15);
 }
+
+/* ==========================================================================
+   Light sections — alternating rhythm against the dark canvas.
+   Overrides are scoped custom properties, so every component built on
+   var(--surface)/var(--text)/var(--amber)/var(--teal) adapts automatically.
+   Accent values are darkened specifically to clear 4.5:1 on this background
+   (the vivid dark-mode amber/teal measure ~1.6:1 here, unusable for text).
+   --ink is deliberately left untouched: it's the fixed "text on solid accent"
+   utility color used by components outside this scope (hero button, nav).
+   ========================================================================== */
+.section-light{
+  background:#f3ede0;
+  --surface: #ffffff;
+  --surface-2: #faf6ee;
+  --surface-3: #f0e9d8;
+  --line: #ddd3bf;
+  --line-soft: #e8e0cd;
+  --text: #1a2333;
+  --text-muted: #4d5670;
+  --text-dim: #6b7488;
+  --amber: #856808;
+  --amber-dim: #6b5306;
+  --teal: #27766f;
+  --teal-dim: #1c5a54;
+}
+/* The one component that fills solid with --teal (active filter chip):
+   the darkened light-mode teal fails contrast against --ink text (2.93:1),
+   so it needs white text specifically in this scope. */
+.section-light .filter-btn.active{ color:#fff; }
 
 /* ==========================================================================
    Nav
@@ -359,13 +388,13 @@ a.row-link .k{ color:var(--text-muted); }
 section{ padding:128px 0; }
 .section-head{ margin-bottom:56px; max-width:640px; }
 .section-head h2{ font-size:clamp(30px,4vw,44px); margin-top:14px; }
-.section-head p{ color:var(--text-muted); margin-top:12px; font-size:15px; }
+.section-head p:not(.eyebrow){ color:var(--text-muted); margin-top:12px; font-size:15px; }
 
 /* ==========================================================================
    About
    ========================================================================== */
 .about-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start; }
-.about-copy p{ color:var(--text-muted); font-size:15px; margin-bottom:16px; }
+.about-copy p:not(.eyebrow){ color:var(--text-muted); font-size:15px; margin-bottom:16px; }
 .about-copy p:last-child{ margin-bottom:0; }
 .facts{
   background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l);
@@ -582,7 +611,7 @@ section{ padding:128px 0; }
   padding:52px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;
 }
 .contact h2{ font-size:clamp(26px,3.4vw,36px); }
-.contact p{ color:var(--text-muted); margin-top:14px; max-width:44ch; }
+.contact p:not(.eyebrow){ color:var(--text-muted); margin-top:14px; max-width:44ch; }
 .contact-links{ display:flex; flex-direction:column; gap:2px; }
 .contact-link{
   display:flex; justify-content:space-between; align-items:center;
